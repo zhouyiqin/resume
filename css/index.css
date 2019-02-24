@@ -1,0 +1,286 @@
+*{
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.428571429;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon{
+  position: relative;
+  padding-left: 30px;
+}
+.icon:before{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: '';
+  background: url('../images/icon.png');
+  background-repeat: no-repeat;
+  background-size: 20px 48px;
+}
+a{
+  color: #12c3f9!important;
+  text-decoration: none!important;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 20px;
+  color: #666;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+}
+html, body{
+  background: #EDEDEF;
+  font-size: 14px;
+  color: #333;
+}
+body{
+  padding: 0 5%;
+}
+.container{
+  max-width: 840px;
+  margin: 0 auto;
+}
+section{
+  padding: 30px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+h2{
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.person{
+  display: flex;
+}
+.person .avatar{
+  width:120px;
+  height: 160px;
+}
+.personInfo{
+  margin-left: 30px;
+}
+.personInfo h3{
+  font-size: 24px;
+  color: #222;
+}
+.personInfo .stats{
+  margin-top: 20px;
+}
+.personInfo .stats span{
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.personInfo .stats span:last-child{
+  margin-right: 0;
+}
+.personInfo .contact{
+  margin-top: 10px;
+  color: #a6a6a6;
+  line-height: 19px;
+}
+.aboutme{
+  color: #666;
+}
+.aboutme li{
+  padding-left: 30px;
+  position: relative;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.aboutme li:before{
+  content: '';
+  display: block;
+  background: #dedede;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+}
+.skillname{
+  color: #666;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.skillname::before{
+  width: 20px;
+  height: 14px;
+  margin-top: -7px;
+}
+.skill {
+  padding-left: 30px; 
+}
+.skill span{
+  display: inline-block;
+  padding: 0 10px;
+  border: 1px solid #dedede;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  position: relative;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+.work {
+  margin-bottom: 30px;
+}
+.work:last-child {
+  margin-bottom: 0;
+}
+.work .company{
+  display: flex;
+  justify-content: space-between;
+}
+.work .company .name{
+  font-size: 16px;
+  color: #333;
+}
+.work .company .name:before{
+  width: 20px;
+  height: 14px;
+  margin-top: -7px;
+  background-position: 0 -32px;
+}
+.work .company .time{
+  color: #a6a6a6;
+}
+.work .job{
+  margin-top: 10px;
+  color: #666;
+  padding-left: 30px;
+}
+.description{
+  margin-top: 20px;
+  line-height: 25px;
+  padding-left: 30px;
+}
+
+.education {
+  margin-bottom: 30px;
+}
+.education:last-child {
+  margin-bottom: 0;
+}
+.education .school{
+  display: flex;
+  justify-content: space-between;
+}
+.education .school .name{
+  font-size: 16px;
+  color: #333;
+}
+.education .school .name:before{
+  width: 20px;
+  height: 16px;
+  margin-top: -8px;
+  background-position: 0 -32px;
+}
+.education .school .time{
+  color: #a6a6a6;
+}
+.education .title{
+  margin-top: 10px;
+  color: #666;
+  padding-left: 30px;
+}
+.intro{
+  display: flex;
+  line-height: 25px;
+
+  /* justify-content: space-between; */
+}
+.intro h4{
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.intro h4:first-child{
+  margin-top: 0;
+}
+.intro>div{
+  flex-basis: 45%;
+  margin-right: 5%;
+}
+
+menu{
+  width: 120px;
+  background: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 70px;
+  right: 5%;
+  text-align: center;
+  color: #666;
+  box-shadow: 0px 0px 2px rgba(0,0,0, .2);
+}
+menu div{
+  line-height: 30px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+menu div:active, menu div.active{
+  color: #12c3f9!important;
+}
+menu div:last-child{
+  border-bottom: none;
+}
+
+.schollworks{
+  display: flex;
+}
+.schollworks>a{
+  display: block;
+  flex-basis: 45%;
+  margin-right: 5%;
+  max-width: 349px;
+  margin-bottom: 15px;
+}
+.schollworks>a:last-child{
+  margin-bottom: 0;
+}
+.schollworks img{
+  display: block;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .company{
+    display: block!important;
+    line-height: 20px;
+  }
+  .company .time{
+    padding-left: 30px;
+  }
+  .intro {
+    display: block;
+  }
+  .schollworks{
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .person{
+    display: block!important;
+    text-align: center;
+  }
+  .person .personInfo{
+    margin-left: 0;
+  }
+  section{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  menu{
+    display: none;
+  }
+}
